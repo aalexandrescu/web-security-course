@@ -6,7 +6,7 @@ logging.basicConfig(filename='target-server.log', level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app = Flask(__name__)
-
+app.config.from_pyfile('config.py')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
