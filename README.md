@@ -30,3 +30,13 @@ flask --app target-server run --port 4567 --host=0.0.0.0
 
 The `--host=0.0.0.0` argument exposes the web application on all IPs.
 
+
+## Verificarea problemelor de linting
+
+```
+pip install flake8
+```
+Din directorul `target-server`:
+```
+flake8 .\target-server.py
+```
