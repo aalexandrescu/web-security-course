@@ -21,3 +21,12 @@ Install Flask within the activated environment:
 ```
 pip install Flask
 ```
+
+## Running the Python web server
+
+```
+flask --app target-server run --port 4567 --host=0.0.0.0
+```
+
+The `--host=0.0.0.0` argument exposes the web application on all IPs.
+
