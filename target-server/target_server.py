@@ -3,7 +3,7 @@ from flask import Flask,redirect,render_template,url_for,request
 import logging
 import db_init
 
-logging.basicConfig(filename='target-server.log', level=logging.DEBUG,
+logging.basicConfig(filename='target_server.log', level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app = Flask(__name__)
@@ -15,7 +15,7 @@ db_init.init_db()
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return 'Hello world'
+    return render_template('index.html')
 
 
 @app.route('/register', methods=['GET'])

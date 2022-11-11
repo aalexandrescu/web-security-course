@@ -8,7 +8,7 @@ def create_connection(db_file):
         conn = sqlite3.connect(db_file)
         print("SQLLITE3 version %s" % sqlite3.version)
     except Error as e:
-        print(e)    
+        print(e)
     return conn
 
 def close_connection(conn):
