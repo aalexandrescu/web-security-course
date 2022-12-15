@@ -31,6 +31,8 @@ flask --app target-server --debug run --port 4567 --host=0.0.0.0
 The `--host=0.0.0.0` argument exposes the web application on all IPs.
 
 
+If error when importing from flask_oidc then downgrade: pip install itsdangerous==2.0.1
+
 ## Verificarea problemelor de linting
 
 ```
