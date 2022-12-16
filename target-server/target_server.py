@@ -141,3 +141,5 @@ def hello_me():
 `python target-server.py`"""
 if __name__ == '__main__':
     app.run(debug=True, port=4567)
+    # with the certificate use https://localhost:4567/
+    #app.run(ssl_context=('cert.pem', 'key.pem'), debug=True, port=4567)
